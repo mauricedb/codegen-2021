@@ -13,6 +13,7 @@ const MovieRow: React.FC<MovieRowProps> = ({ movie }) => (
       <Link
         to={`/movie/${movie.id}`}
         className="btn btn-default btn-xs edit-button"
+        aria-label={`Edit ${movie.title}`}
       >
         Edit
       </Link>
