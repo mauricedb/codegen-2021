@@ -16,10 +16,14 @@ const MovieEditor: React.FC = () => {
   const { id } = useParams<Params>();
   const { push } = useHistory();
   const dispatch = useDispatch();
+
   React.useEffect(() => {
     dispatch(loadMovie(id));
   }, [dispatch, id]);
-  const movie = useSelector((state: RootState) => state.currentMovie);
+
+  const movie = useSelector<RootState, Movie | null>(
+    (state) => state.currentMovie
+  );
 
   const onChange = React.useCallback(
     (prop, value) => {
@@ -28,7 +32,7 @@ const MovieEditor: React.FC = () => {
     [dispatch]
   );
 
-  async function saveMovie() {
+  const saveMovie = React.useCallback(async () => {
     const response = await fetch(
       `${process.env.REACT_APP_API_ORIGIN}/popular-movies/${id}`,
       {
@@ -42,18 +46,20 @@ const MovieEditor: React.FC = () => {
     if (response.ok) {
       push('/movies');
     }
-  }
+  }, [id, movie, push]);
 
   if (!movie) {
     return <Loading />;
   }
 
   return (
-    <form>
+    <form className="wa s-validated">
       <TextInput
         label="Title"
         value={movie.title}
-        onChange={(e) => onChange('title', e.target.value)}
+        onChange={(e) => onChange('title', e.currentTarget.value)}
+        isInvalid={!movie.title}
+        invalidMessage="The movie title is required"
       />
       <div className="form-group">
         <label>Overview</label>
@@ -82,7 +88,12 @@ const MovieEditor: React.FC = () => {
       </div>
 
       <div className="btn-group">
-        <button onClick={saveMovie} type="button" className="btn btn-primary">
+        <button
+          onClick={saveMovie}
+          type="button"
+          disabled={!movie.title}
+          className="btn btn-primary"
+        >
           Save
         </button>
         <Link to={`/movies`} className="btn btn-danger">

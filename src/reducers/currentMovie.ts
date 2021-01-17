@@ -11,10 +11,16 @@ const currentMovie = function (
       return action.payload;
 
     case 'MOVIE-PROP-CHANGED':
-      return {
-        ...state,
-        [action.payload.prop]: action.payload.value,
-      } as Movie;
+      if (state) {
+        // Update the movie
+        return {
+          ...state,
+          [action.payload.prop]: action.payload.value,
+        };
+      } else {
+        // Can't change a movie we don't have yet
+        return null;
+      }
 
     default:
       return state;

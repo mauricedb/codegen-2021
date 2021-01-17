@@ -2,7 +2,7 @@ import type { Dispatch } from 'redux';
 
 export const moviesLoaded = (movies: Movie[]) => {
   return {
-    type: 'MOVIES-LOADED' as 'MOVIES-LOADED',
+    type: 'MOVIES-LOADED' as const,
     payload: movies,
   };
 };
@@ -11,7 +11,7 @@ export type MoviesLoaded = ReturnType<typeof moviesLoaded>;
 
 export const movieLoaded = (movie: Movie) => {
   return {
-    type: 'MOVIE-LOADED' as 'MOVIE-LOADED',
+    type: 'MOVIE-LOADED' as const,
     payload: movie,
   };
 };

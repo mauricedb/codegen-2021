@@ -9,10 +9,12 @@ import { loadMovies } from '../actions';
 
 const MovieList: React.FC = () => {
   const dispatch = useDispatch();
+
   React.useEffect(() => {
     dispatch(loadMovies());
   }, [dispatch]);
-  const movies = useSelector((state: RootState) => state.movies);
+
+  const movies = useSelector<RootState, Movie[]>((state) => state.movies);
 
   if (!movies.length) {
     return <Loading />;
