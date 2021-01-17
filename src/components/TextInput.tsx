@@ -1,6 +1,7 @@
 import React, { ChangeEventHandler } from 'react';
 
 type TextInputProps = {
+  id?: string;
   invalidMessage?: string;
   isInvalid?: boolean;
   label: string;
@@ -9,13 +10,14 @@ type TextInputProps = {
 };
 
 const TextInput: React.FC<TextInputProps> = ({
+  id,
   invalidMessage = 'Invalid value',
   isInvalid,
   label,
   value,
   onChange,
 }) => (
-  <div className="form-group">
+  <div id={id} className="form-group">
     <label>{label}</label>
     <input
       type="text"

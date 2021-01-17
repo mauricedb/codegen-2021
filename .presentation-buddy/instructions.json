@@ -1,0 +1,97 @@
+[
+  {
+    "type": "createFile",
+    "path": "./cypress/integration/01-basic.spec.js"
+  },
+  {
+    "type": "typeTextFromFile",
+    "path": "./01-basic.spec.js"
+  },
+  // {
+  //   "type": "wait",
+  //   "delay": "manual",
+  //   "save": true
+  // },
+
+  {
+    "type": "createFile",
+    "path": "./cypress/jsconfig.json"
+  },
+  {
+    "type": "typeTextFromFile",
+    "path": "./jsconfig.json"
+  },
+  // {
+  //   "type": "wait",
+  //   "delay": "manual",
+  //   "save": true
+  // }
+
+  {
+    "type": "openFile",
+    "path": "src/components/MovieRow.tsx"
+  },
+  {
+    "type": "goto",
+    "line": 9,
+    "column": 6
+  },
+  {
+    "type": "typeText",
+    "text": [" id={`movie-${movie.id}`}"]
+  },
+  {
+    "type": "goto",
+    "line": 10,
+    "column": 8
+  },
+  {
+    "type": "typeText",
+    "text": [" className=\"title\""]
+  },
+
+  {
+    "type": "openFile",
+    "path": "src/components/MovieEditor.tsx"
+  },
+  {
+    "type": "goto",
+    "line": 57,
+    "column": 999
+  },
+  {
+    "type": "typeText",
+    "text": [" id=\"title\""]
+  },
+
+  {
+    "type": "openFile",
+    "path": "./cypress/integration/01-basic.spec.js"
+  },
+  {
+    "type": "goto",
+    "line": 8,
+    "column": 999
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "",
+      "",
+      "    cy.get('#movie-419704 > td.title').should('have.text', 'Ad Astra');"
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 15,
+    "column": 999
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "",
+      "",
+      "    cy.get('#title > .form-control').should('be.visible');"
+    ]
+  }
+]
