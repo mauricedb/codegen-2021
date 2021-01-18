@@ -10,7 +10,7 @@ type TextInputProps = {
 };
 
 const TextInput: React.FC<TextInputProps> = ({
-  id,
+  id = `id-${Math.random()}`,
   invalidMessage = 'Invalid value',
   isInvalid,
   label,
@@ -18,8 +18,9 @@ const TextInput: React.FC<TextInputProps> = ({
   onChange,
 }) => (
   <div id={id} className="form-group">
-    <label>{label}</label>
+    <label htmlFor={`${id}-input`}>{label}</label>
     <input
+      id={`${id}-input`}
       type="text"
       className={`form-control ${isInvalid ? 'is-invalid' : ''}`}
       value={value}

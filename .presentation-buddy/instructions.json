@@ -93,5 +93,74 @@
       "",
       "    cy.get('#title > .form-control').should('be.visible');"
     ]
+  },
+
+  {
+    "type": "openFile",
+    "path": "./cypress.json"
+  },
+  {
+    "type": "goto",
+    "line": 1,
+    "column": 2
+  },
+  {
+    "type": "typeText",
+    "text": ["\"baseUrl\": \"http://localhost:3000\""]
+  },
+
+  {
+    "type": "openFile",
+    "path": "./cypress/support/commands.js"
+  },
+  {
+    "type": "goto",
+    "line": 26
+  },
+  {
+    "type": "typeText",
+    "text": ["", "", "import '@testing-library/cypress/add-commands';"]
+  },
+
+  {
+    "type": "createFile",
+    "path": "./cypress/integration/02-better.spec.js"
+  },
+  {
+    "type": "typeTextFromFile",
+    "path": "./02-better.spec.js"
+  },
+
+  {
+    "type": "openFile",
+    "path": "./src/components/MovieRow.tsx"
+  },
+  {
+    "type": "goto",
+    "line": 9,
+    "column": 31
+  },
+  {
+    "type": "typeText",
+    "text": [" aria-label={movie.title}"]
+  },
+
+  {
+    "type": "openFile",
+    "path": "./cypress/integration/02-better.spec.js"
+  },
+  {
+    "type": "goto",
+    "line": 19,
+    "column": 52
+  },
+  {
+    "type": "command",
+    "command": "cursorWordEndRightSelect",
+    "repeat": 3
+  },
+  {
+    "type": "command",
+    "command": "deleteRight"
   }
 ]
