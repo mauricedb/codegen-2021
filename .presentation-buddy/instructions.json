@@ -162,5 +162,31 @@
   {
     "type": "command",
     "command": "deleteRight"
+  },
+
+  {
+    "type": "createFile",
+    "path": "./cypress/fixtures/popular-movies.json"
+  },
+  {
+    "type": "typeTextFromFile",
+    "path": "./fixtures/popular-movies.json"
+  },
+
+  {
+    "type": "createFile",
+    "path": "./cypress/integration/03-network.spec.js"
+  },
+  {
+    "type": "typeTextFromFile",
+    "path": "./03-network.spec.js"
+  },
+  {
+    "type": "createFile",
+    "path": "./cypress/integration/04-wait-network.spec.js"
+  },
+  {
+    "type": "typeTextFromFile",
+    "path": "./04-wait-network.spec.js"
   }
 ]
