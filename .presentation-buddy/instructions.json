@@ -181,6 +181,21 @@
     "type": "typeTextFromFile",
     "path": "./03-network.spec.js"
   },
+
+  {
+    "type": "openFile",
+    "path": "./cypress.json"
+  },
+  {
+    "type": "goto",
+    "line": 1,
+    "column": 37
+  },
+  {
+    "type": "typeText",
+    "text": [", \"retries\": { \"runMode\": 2, \"openMode\": 0 }"]
+  },
+
   {
     "type": "createFile",
     "path": "./cypress/integration/04-wait-network.spec.js"
@@ -188,5 +203,11 @@
   {
     "type": "typeTextFromFile",
     "path": "./04-wait-network.spec.js"
+  },
+
+  {
+    "type": "wait",
+    "delay": "manual",
+    "save": true
   }
 ]
