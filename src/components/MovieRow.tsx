@@ -12,7 +12,7 @@ const MovieRow: React.FC<MovieRowProps> = ({ movie }) => (
     <td style={{ width: 1 }}>
       <Link
         to={`/movie/${movie.id}`}
-        className="btn btn-default btn-xs edit-button"
+        className="btn btn-default btn-xs edit-button font-weight-bold"
       >
         Edit
       </Link>

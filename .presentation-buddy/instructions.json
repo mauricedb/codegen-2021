@@ -206,6 +206,76 @@
   },
 
   {
+    "type": "openFile",
+    "path": "./cypress/support/commands.js"
+  },
+  {
+    "type": "goto",
+    "line": 27,
+    "column": 999
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "",
+      "",
+      "import { addMatchImageSnapshotCommand } from 'cypress-image-snapshot/command';",
+      "",
+      "addMatchImageSnapshotCommand({",
+      "  comparisonMethod: 'ssim',",
+      "  failureThreshold: 0.01,",
+      "  failureThresholdType: 'percent',",
+      "});"
+    ]
+  },
+
+  {
+    "type": "openFile",
+    "path": "./cypress/plugins/index.js"
+  },
+  {
+    "type": "goto",
+    "line": 13,
+    "column": 999
+  },
+  {
+    "type": "typeText",
+    "text": [
+      "",
+      "",
+      "const { addMatchImageSnapshotPlugin } = require('cypress-image-snapshot/plugin');",
+      ""
+    ]
+  },
+  {
+    "type": "goto",
+    "line": 23,
+    "column": 999
+  },
+  {
+    "type": "typeText",
+    "text": ["", "  addMatchImageSnapshotPlugin(on, config);"]
+  },
+
+  {
+    "type": "openFile",
+    "path": "./cypress/integration/04-wait-network.spec.js"
+  },
+  {
+    "type": "goto",
+    "line": 42,
+    "column": 999
+  },
+  {
+    "type": "typeText",
+    "text": ["", "", ""]
+  },
+  {
+    "type": "typeTextFromFile",
+    "path": "./05-match-snapshot.js"
+  },
+
+  {
     "type": "wait",
     "delay": "manual",
     "save": true
