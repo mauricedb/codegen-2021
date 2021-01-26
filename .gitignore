@@ -24,3 +24,7 @@ yarn-error.log*
 
 # ESLint
 .eslintcache
+
+# Cypress
+cypress/videos
+cypress/**/__diff_output__
