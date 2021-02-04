@@ -26,5 +26,6 @@ yarn-error.log*
 .eslintcache
 
 # Cypress
-cypress/videos
 cypress/**/__diff_output__
+cypress/screenshots
+cypress/videos
