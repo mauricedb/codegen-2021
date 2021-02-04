@@ -39,7 +39,7 @@
     "cypress:run": "cypress run",
     "cypress:run:ci": "cross-env BROWSER=none start-server-and-test start http://localhost:3000 cypress:run",
     "cypress:run:update": "npm run cypress:run -- --env updateSnapshots=true",
-    "cypress:run:docker": "docker run --rm -it --ipc=host --entrypoint=\"\" -v %cd%:/e2e -w /e2e cypress/included:6.2.1 npm run cypress:run:ci"
+    "cypress:docker:update": "docker run --rm -it --ipc=host --entrypoint=\"\" --env CYPRESS_updateSnapshots=true -v %cd%:/e2e -w /e2e cypress/included:6.3.0 npm run cypress:run:ci"
   },
   "eslintConfig": {
     "extends": [
