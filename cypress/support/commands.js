@@ -23,3 +23,13 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+import '@testing-library/cypress/add-commands';
+
+import { addMatchImageSnapshotCommand } from 'cypress-image-snapshot/command';
+
+addMatchImageSnapshotCommand({
+  comparisonMethod: 'ssim',
+  failureThreshold: 0.01,
+  failureThresholdType: 'percent',
+});

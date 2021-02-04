@@ -6,8 +6,8 @@ type MovieRowProps = {
 };
 
 const MovieRow: React.FC<MovieRowProps> = ({ movie }) => (
-  <tr>
-    <td>{movie.title}</td>
+  <tr id={`movie-${movie.id}`} aria-label={movie.title}>
+    <td className="title">{movie.title}</td>
     <td>{movie.vote_average}</td>
     <td style={{ width: 1 }}>
       <Link

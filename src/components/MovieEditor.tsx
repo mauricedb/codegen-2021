@@ -55,6 +55,7 @@ const MovieEditor: React.FC = () => {
   return (
     <form className="wa s-validated">
       <TextInput
+        id="title"
         label="Title"
         value={movie.title}
         onChange={(e) => onChange('title', e.currentTarget.value)}
