@@ -7,11 +7,11 @@
     "type": "typeTextFromFile",
     "path": "./01-basic.spec.js"
   },
-  // {
-  //   "type": "wait",
-  //   "delay": "manual",
-  //   "save": true
-  // },
+  {
+    "type": "wait",
+    "delay": "manual",
+    "save": true
+  },
 
   {
     "type": "createFile",
@@ -21,11 +21,11 @@
     "type": "typeTextFromFile",
     "path": "./jsconfig.json"
   },
-  // {
-  //   "type": "wait",
-  //   "delay": "manual",
-  //   "save": true
-  // }
+  {
+    "type": "wait",
+    "delay": "manual",
+    "save": true
+  },
 
   {
     "type": "openFile",
@@ -63,6 +63,11 @@
     "type": "typeText",
     "text": [" id=\"title\""]
   },
+  {
+    "type": "wait",
+    "delay": "manual",
+    "save": true
+  },
 
   {
     "type": "openFile",
@@ -94,6 +99,11 @@
       "    cy.get('#title > .form-control').should('be.visible');"
     ]
   },
+  {
+    "type": "wait",
+    "delay": "manual",
+    "save": true
+  },
 
   {
     "type": "openFile",
@@ -108,6 +118,11 @@
     "type": "typeText",
     "text": ["\"baseUrl\": \"http://localhost:3000\""]
   },
+  {
+    "type": "wait",
+    "delay": "manual",
+    "save": true
+  },
 
   {
     "type": "openFile",
@@ -121,6 +136,11 @@
     "type": "typeText",
     "text": ["", "", "import '@testing-library/cypress/add-commands';"]
   },
+  {
+    "type": "wait",
+    "delay": "manual",
+    "save": true
+  },
 
   {
     "type": "createFile",
@@ -129,6 +149,11 @@
   {
     "type": "typeTextFromFile",
     "path": "./02-better.spec.js"
+  },
+  {
+    "type": "wait",
+    "delay": "manual",
+    "save": true
   },
 
   {
@@ -143,6 +168,11 @@
   {
     "type": "typeText",
     "text": [" aria-label={movie.title}"]
+  },
+  {
+    "type": "wait",
+    "delay": "manual",
+    "save": true
   },
 
   {
@@ -163,6 +193,11 @@
     "type": "command",
     "command": "deleteRight"
   },
+  {
+    "type": "wait",
+    "delay": "manual",
+    "save": true
+  },
 
   {
     "type": "createFile",
@@ -172,6 +207,11 @@
     "type": "typeTextFromFile",
     "path": "./fixtures/popular-movies.json"
   },
+  {
+    "type": "wait",
+    "delay": "manual",
+    "save": true
+  },
 
   {
     "type": "createFile",
@@ -180,6 +220,11 @@
   {
     "type": "typeTextFromFile",
     "path": "./03-network.spec.js"
+  },
+  {
+    "type": "wait",
+    "delay": "manual",
+    "save": true
   },
 
   {
@@ -195,6 +240,11 @@
     "type": "typeText",
     "text": [", \"retries\": { \"runMode\": 2, \"openMode\": 0 }"]
   },
+  {
+    "type": "wait",
+    "delay": "manual",
+    "save": true
+  },
 
   {
     "type": "createFile",
@@ -203,6 +253,11 @@
   {
     "type": "typeTextFromFile",
     "path": "./04-wait-network.spec.js"
+  },
+  {
+    "type": "wait",
+    "delay": "manual",
+    "save": true
   },
 
   {
@@ -227,6 +282,11 @@
       "  failureThresholdType: 'percent',",
       "});"
     ]
+  },
+  {
+    "type": "wait",
+    "delay": "manual",
+    "save": true
   },
 
   {
@@ -256,6 +316,11 @@
     "type": "typeText",
     "text": ["", "  addMatchImageSnapshotPlugin(on, config);"]
   },
+  {
+    "type": "wait",
+    "delay": "manual",
+    "save": true
+  },
 
   {
     "type": "openFile",
@@ -274,7 +339,6 @@
     "type": "typeTextFromFile",
     "path": "./05-match-snapshot.js"
   },
-
   {
     "type": "wait",
     "delay": "manual",
