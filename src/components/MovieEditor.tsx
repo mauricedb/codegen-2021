@@ -80,6 +80,11 @@ const MovieEditor: React.FC = () => {
         value={movie.release_date}
         onChange={(e) => onChange('release_date', e.target.value)}
       />
+      <TextInput
+        label="Rating"
+        value={movie.rating}
+        onChange={(e) => onChange('rating', e.target.value)}
+      />
       <div className="form-group">
         <img
           src={`//image.tmdb.org/t/p/w185${movie.poster_path}`}

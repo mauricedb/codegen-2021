@@ -8,7 +8,7 @@ const currentMovie = function (
 
   switch (action.type) {
     case 'MOVIE-LOADED':
-      return action.payload;
+      return { ...action.payload, rating: 10 * Math.random() };
 
     case 'MOVIE-PROP-CHANGED':
       if (state) {
