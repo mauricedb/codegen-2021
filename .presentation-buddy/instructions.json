@@ -357,6 +357,21 @@
   },
 
   {
+    "type": "createFile",
+    "path": "./.github/workflows/cypress.yml"
+  },
+  {
+    "type": "typeTextFromFile",
+    "path": "./07-cypress.yml"
+  },
+  {
+    "skip": true,
+    "type": "wait",
+    "delay": "manual",
+    "save": true
+  },
+
+  {
     "type": "openFile",
     "path": "./cypress.json"
   },
