@@ -8,7 +8,6 @@
     "path": "./01-basic.spec.js"
   },
   {
-    "skip": true,
     "type": "wait",
     "delay": "manual",
     "save": true
@@ -23,7 +22,6 @@
     "path": "./jsconfig.json"
   },
   {
-    "skip": true,
     "type": "wait",
     "delay": "manual",
     "save": true
@@ -66,7 +64,6 @@
     "text": [" id=\"title\""]
   },
   {
-    "skip": true,
     "type": "wait",
     "delay": "manual",
     "save": true
@@ -103,7 +100,6 @@
     ]
   },
   {
-    "skip": true,
     "type": "wait",
     "delay": "manual",
     "save": true
@@ -123,7 +119,6 @@
     "text": ["\"baseUrl\": \"http://localhost:3000\""]
   },
   {
-    "skip": true,
     "type": "wait",
     "delay": "manual",
     "save": true
@@ -142,7 +137,6 @@
     "text": ["", "", "import '@testing-library/cypress/add-commands';"]
   },
   {
-    "skip": true,
     "type": "wait",
     "delay": "manual",
     "save": true
@@ -157,7 +151,6 @@
     "path": "./02-better.spec.js"
   },
   {
-    "skip": true,
     "type": "wait",
     "delay": "manual",
     "save": true
@@ -177,7 +170,6 @@
     "text": [" aria-label={movie.title}"]
   },
   {
-    "skip": true,
     "type": "wait",
     "delay": "manual",
     "save": true
@@ -202,7 +194,6 @@
     "command": "deleteRight"
   },
   {
-    "skip": true,
     "type": "wait",
     "delay": "manual",
     "save": true
@@ -217,7 +208,6 @@
     "path": "./fixtures/popular-movies.json"
   },
   {
-    "skip": true,
     "type": "wait",
     "delay": "manual",
     "save": true
@@ -232,7 +222,6 @@
     "path": "./03-network.spec.js"
   },
   {
-    "skip": true,
     "type": "wait",
     "delay": "manual",
     "save": true
@@ -247,7 +236,6 @@
     "path": "./04-wait-network.spec.js"
   },
   {
-    "skip": true,
     "type": "wait",
     "delay": "manual",
     "save": true
@@ -277,7 +265,6 @@
     ]
   },
   {
-    "skip": true,
     "type": "wait",
     "delay": "manual",
     "save": true
@@ -311,7 +298,6 @@
     "text": ["", "  addMatchImageSnapshotPlugin(on, config);"]
   },
   {
-    "skip": true,
     "type": "wait",
     "delay": "manual",
     "save": true
@@ -326,7 +312,6 @@
     "path": "./05-match-snapshot.js"
   },
   {
-    "skip": true,
     "type": "wait",
     "delay": "manual",
     "save": true
@@ -350,7 +335,6 @@
     "path": "./06-command.js"
   },
   {
-    "skip": true,
     "type": "wait",
     "delay": "manual",
     "save": true
@@ -365,7 +349,6 @@
     "path": "./07-cypress.yml"
   },
   {
-    "skip": true,
     "type": "wait",
     "delay": "manual",
     "save": true
