@@ -10,7 +10,6 @@ context('cy.intercept() and data returned', () => {
   it('loads the complete data set', () => {
     return cy.wait('@popular-movies').then((xhr) => {
       const movies = xhr.response.body;
-      console.log(movies);
 
       movies.forEach((movie, index) => {
         cy.findAllByRole('rowgroup')
